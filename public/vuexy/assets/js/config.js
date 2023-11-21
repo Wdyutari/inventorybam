@@ -98,7 +98,7 @@ if (typeof TemplateCustomizer !== 'undefined') {
     // defaultLayoutType: 'fixed',
     // defaultMenuCollapsed: true,
     // defaultNavbarFixed: true,
-    // defaultFooterFixed: false
+    defaultFooterFixed: true,
     defaultShowDropdownOnHover: true
     // controls: [
     //   'rtl',
