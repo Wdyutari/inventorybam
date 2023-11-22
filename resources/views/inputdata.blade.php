@@ -1,12 +1,10 @@
 @extends('layout.main')
-@section('content')
-
 <!-- Content wrapper -->
 <div class="content-wrapper">
                     <!-- Content -->
 
                     <div class="container-xxl flex-grow-1 container-p-y">
-
+                        <div class="container">
                         <div class="row">
                             <!-- Website Analytics -->
                             <div class="col-lg-6 mb-4">
@@ -396,7 +394,7 @@
                             <!--/ Support Tracker -->
 
                         </div>
-
+                    </div>
                     </div>
                     <!-- / Content -->
 
@@ -420,4 +418,3 @@
                     <div class="content-backdrop fade"></div>
                 </div>
                 <!-- Content wrapper -->
-@endsection
