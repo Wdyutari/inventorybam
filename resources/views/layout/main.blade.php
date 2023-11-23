@@ -13,7 +13,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('vuexy/assets/img/BAM/favicon-bam.png') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('vuexy/assets/img/BAM/favicon-bam.ico') }}" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -39,8 +39,10 @@
     <link rel="stylesheet" href="{{ asset('vuexy/assets/vendor/libs/apex-charts/apex-charts.css') }}" />
     <link rel="stylesheet" href="{{ asset('vuexy/assets/vendor/libs/swiper/swiper.css') }}" />
     <link rel="stylesheet" href="{{ asset('vuexy/assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css') }}" />
-    <link rel="stylesheet" href="{{ asset('vuexy/assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css') }}" />
-    <link rel="stylesheet" href="{{ asset('vuexy/assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css') }}" />
+    <link rel="stylesheet"
+        href="{{ asset('vuexy/assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css') }}" />
+    <link rel="stylesheet"
+        href="{{ asset('vuexy/assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css') }}" />
 
     <!-- Page CSS -->
     <link rel="stylesheet" href="{{ asset('vuexy/assets/vendor/css/pages/cards-advance.css') }}" />
@@ -62,7 +64,7 @@
                 <div class="app-brand demo">
                     <a href="index.html" class="app-brand-link">
                         <span class="app-brand-logo demo">
-                            <img src="{{ asset('vuexy/assets/img/BAM/bam.png') }}" height="30"/>
+                            <img src="{{ asset('vuexy/assets/img/BAM/bam.png') }}" height="30" />
                         </span>
 
                         <span class="app-brand-text demo menu-text fw-bold">Inventaris</span>
@@ -139,7 +141,8 @@
                                     <div data-i18n="SDM Umum">SDM Umum</div>
                                 </a>
                             </li>
-
+                        </ul>
+                    </li>
                     <!-- Master Data -->
                     <li class="menu-header small text-uppercase">
                         <span class="menu-header-text">Master Data</span>
@@ -177,10 +180,8 @@
                                     <div data-i18n="SDM Umum">SDM Umum</div>
                                 </a>
                             </li>
-
                         </ul>
                     </li>
-                </ul>
             </aside>
             <!-- / Menu -->
 
