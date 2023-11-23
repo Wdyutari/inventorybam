@@ -43,6 +43,17 @@ document.addEventListener('DOMContentLoaded', function (e) {
               }
             }
           },
+          'nopeg': {
+            validators: {
+              notEmpty: {
+                message: 'Nopeg Wajib Diisi'
+              },
+              stringLength: {
+                min: 8,
+                message: 'Nopeg Tidak Valid'
+              }
+            }
+          },
           password: {
             validators: {
               notEmpty: {

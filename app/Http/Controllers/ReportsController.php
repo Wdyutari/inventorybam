@@ -21,4 +21,12 @@ class ReportsController extends Controller
         ];
         return view('reports/klinik', $data);
     }
+    
+    public function Rs() {
+        $data = [
+            'title' => 'Report - Rumah Sakit',
+            'menu' => 'Rumah Sakit',
+        ];
+        return view('reports/rs', $data);
+    }
 }

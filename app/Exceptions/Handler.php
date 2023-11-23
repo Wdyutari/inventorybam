@@ -27,4 +27,21 @@ class Handler extends ExceptionHandler
             //
         });
     }
+
+    function render($request, Throwable $exception)
+    {
+        if ($this->isHttpException($exception)) {
+            if ($exception->getStatusCode() == 404) {
+                $data = [
+                    'title' => '404 - Not Found',
+                    'menu' => 'Not Found',
+                ];
+                return response()->view('errors.404', [], 404, $data);
+            }
+            if ($exception->getStatusCode() == 500) {
+                return response()->view('errors.500', [], 500);
+            }
+        }
+        return parent::render($request, $exception);
+    }
 }

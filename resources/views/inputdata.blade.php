@@ -95,8 +95,7 @@
                                             <label class="col-sm-3 col-form-label"
                                                 for="basic-default-company">Lokasi</label>
                                             <div class="col-sm-9">
-                                                <select id="lokasi" class="select2 form-select"
-                                                    data-allow-clear="true">
+                                                <select id="lokasi" class="select2 form-select" data-allow-clear="true">
                                                     <option value="">Lokasi</option>
                                                     <option value="2015">2015</option>
                                                     <option value="2016">2016</option>
@@ -116,8 +115,7 @@
                                             <div class="col-sm-9">
                                                 <div class="input-group input-group-merge">
                                                     <input type="text" id="no-inventaris" class="form-control"
-                                                        placeholder="No Inventaris Kode Pers" aria-label=""
-                                                    />
+                                                        placeholder="No Inventaris Kode Pers" aria-label="" />
 
                                                 </div>
 
@@ -150,7 +148,8 @@
                                             </div>
                                         </div>
                                         <div class="row mb-3">
-                                            <label class="col-sm-3 col-form-label" for="basic-default-message">Kondisi Aset</label>
+                                            <label class="col-sm-3 col-form-label" for="basic-default-message">Kondisi
+                                                Aset</label>
                                             <div class="col-sm-9">
                                                 <select id="kondisi-aset" class="select2 form-select"
                                                     data-allow-clear="true">
@@ -161,13 +160,15 @@
                                             </div>
                                         </div>
                                         <div class="row mb-3">
-                                            <label class="col-sm-3 col-form-label" for="basic-default-message">Upload Aset</label>
+                                            <label class="col-sm-3 col-form-label" for="basic-default-message">Upload
+                                                Aset</label>
                                             <div class="col-sm-9">
                                                 <input class="form-control" type="file" id="formFile" />
                                             </div>
                                         </div>
                                         <div class="row mb-3">
-                                            <label class="col-sm-3 col-form-label" for="basic-default-message">Keterangan</label>
+                                            <label class="col-sm-3 col-form-label"
+                                                for="basic-default-message">Keterangan</label>
                                             <div class="col-sm-9">
                                                 <textarea type="text" class="form-control" placeholder="Keterangan Aset"></textarea>
                                             </div>
