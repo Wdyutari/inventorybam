@@ -8,7 +8,7 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Dashboard - Input Data</title>
+    <title>{{ $title }}</title>
 
     <meta name="description" content="" />
 
@@ -86,17 +86,17 @@
                             <div data-i18n="Dashboards">Dashboards</div>
                         </a>
                         <ul class="menu-sub">
-                            <li class="menu-item active">
+                            <li class="menu-item {{ request()->is('/') ? 'active' : '' }}">
                                 <a href="/" class="menu-link">
                                     <div data-i18n="Input Data">Input Data</div>
                                 </a>
                             </li>
-                            <li class="menu-item">
+                            <li class="menu-item {{ request()->is('cetak-data') ? 'active' : '' }}">
                                 <a href="/cetak-data" class="menu-link">
                                     <div data-i18n="Cetak Data">Cetak Data</div>
                                 </a>
                             </li>
-                            <li class="menu-item">
+                            <li class="menu-item {{ request()->is('referensi') ? 'active' : '' }}">
                                 <a href="/referensi" class="menu-link">
                                     <div data-i18n="Tambah Referensi">Tambah Referensi</div>
                                 </a>

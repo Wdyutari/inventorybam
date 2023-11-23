@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'dashboard']);
+Route::get('/', [HomeController::class, 'inputData']);
 Route::get('/cetak-data', [HomeController::class, 'cetakData']);
 Route::get('/referensi', [HomeController::class, 'referensi']);
 
