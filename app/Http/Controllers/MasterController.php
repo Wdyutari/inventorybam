@@ -7,11 +7,11 @@ use Illuminate\Http\Request;
 class MasterController extends Controller
 {
     //Unit Kerja
-    public function unitKerja() {
+    public function minventori() {
         $data = [
-            'title' => 'Master - Unit Kerja',
-            'menu' => 'Unit Kerja',
+            'title' => 'Master Data',
+            'menu' => 'Master Inventori',
         ];
-        return view('masterdata/unitkerja', $data);
+        return view('masterdata/minventori', $data);
     }
 }

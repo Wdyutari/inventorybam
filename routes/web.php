@@ -27,7 +27,7 @@ Route::get('/reports/head-office', [ReportsController::class, 'HeadOffice']);
 Route::get('/reports/klinik', [ReportsController::class, 'Klinik']);
 
 // Master Data
-Route::get('/master-data/unit-kerja', [MasterController::class, 'unitKerja']);
+Route::get('/master-data/m-inventori', [MasterController::class, 'mInventori']);
 
 
 

@@ -20,12 +20,12 @@
 
     <ul class="menu-inner py-1">
         <!-- Dashboards -->
-        <li class="menu-item active open">
-            <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <li class="menu-item {{ request()->is('/') ? 'active' : '' }}">
+            <a href="" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-smart-home"></i>
                 <div data-i18n="Dashboards">Dashboards</div>
             </a>
-            <ul class="menu-sub">
+            {{-- <ul class="menu-sub">
                 <li class="menu-item {{ request()->is('/') ? 'active' : '' }}">
                     <a href="/" class="menu-link">
                         <div data-i18n="Input Data">Input Data</div>
@@ -41,8 +41,20 @@
                         <div data-i18n="Tambah Referensi">Tambah Referensi</div>
                     </a>
                 </li>
-            </ul>
+            </ul> --}}
         </li>
+
+        <!-- Input Inventoris -->
+        <li class="menu-header small text-uppercase">
+            <span class="menu-header-text">Input Inventori</span>
+        </li>
+        <li class="menu-item {{ request()->is('/') ? 'active' : '' }}">
+            <a href="/" class="menu-link">
+                <div data-i18n="Input Data">Input Data</div>
+            </a>
+        </li>
+        <!-- //Input Inventori-->
+
 
         <!-- Reports -->
         <li class="menu-header small text-uppercase">
@@ -61,11 +73,11 @@
             </a>
         </li>
         <li class="menu-item">
-            <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <a href="javascript:void(0);" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-file-dollar"></i>
                 <div data-i18n="Rumah Sakit">Rumah Sakit</div>
             </a>
-            <ul class="menu-sub">
+            {{-- <ul class="menu-sub">
                 <li class="menu-item">
                     <a href="app-invoice-list.html" class="menu-link">
                         <div data-i18n="Layanan Medis">Layanan Medis</div>
@@ -81,19 +93,22 @@
                         <div data-i18n="SDM Umum">SDM Umum</div>
                     </a>
                 </li>
-            </ul>
+            </ul> --}}
         </li>
+
         <!-- Master Data -->
         <li class="menu-header small text-uppercase">
             <span class="menu-header-text">Master Data</span>
         </li>
-        <li class="menu-item {{ request()->is('master-data/unit-kerja') ? 'active' : '' }}">
-            <a href="/master-data/unit-kerja" class="menu-link">
+        <li class="menu-item {{ request()->is('master-data/m-inventori') ? 'active' : '' }}">
+            <a href="/master-data/m-inventori" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-mail"></i>
-                <div data-i18n="Unit Kerja">Unit Kerja</div>
+                <div data-i18n="Master Inventori">Master Inventori</div>
             </a>
         </li>
-        <li class="menu-item">
+        <!-- //Master Data-->
+
+        {{-- <li class="menu-item">
             <a href="app-chat.html" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-messages"></i>
                 <div data-i18n="Unit Bisnis">Unit Bisnis</div>
@@ -103,7 +118,7 @@
             <a href="javascript:void(0);" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-file-dollar"></i>
                 <div data-i18n="Jenis Inventori">Jenis Inventori</div>
-            </a>
+            </a> --}}
             {{-- <ul class="menu-sub">
                 <li class="menu-item">
                     <a href="app-invoice-list.html" class="menu-link">
