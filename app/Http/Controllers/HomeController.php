@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function inputData() {
+    public function InputData() {
         $data = [
             'title' => 'Dashboard - Input Data',
             'menu' => 'Input Data',
@@ -15,7 +15,7 @@ class HomeController extends Controller
         return view('inputdata', $data);
     }
     
-    public function cetakData() {
+    public function CetakData() {
         $data = [
             'title' => 'Dashboard - Cetak Data',
             'menu' => 'Cetak Data',
@@ -23,7 +23,7 @@ class HomeController extends Controller
         return view('cetakdata', $data);
     }
     
-    public function referensi() {
+    public function Referensi() {
         $data = [
             'title' => 'Dashboard - Referensi',
             'menu' => 'Referensi',
@@ -31,7 +31,7 @@ class HomeController extends Controller
         return view('referensi', $data);
     }
 
-    public function index() {
+    public function Index() {
         $data = User::get();
         return view('index', compact('data'));
     }
