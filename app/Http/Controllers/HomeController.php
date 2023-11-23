@@ -8,7 +8,15 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function dashboard() {
-        return view('dashboard');
+        return view('inputdata');
+    }
+    
+    public function cetakData() {
+        return view('cetakdata');
+    }
+    
+    public function referensi() {
+        return view('referensi');
     }
 
     public function index() {

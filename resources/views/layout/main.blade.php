@@ -87,17 +87,17 @@
                         </a>
                         <ul class="menu-sub">
                             <li class="menu-item active">
-                                <a href="index.html" class="menu-link">
+                                <a href="/" class="menu-link">
                                     <div data-i18n="Input Data">Input Data</div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="dashboards-crm.html" class="menu-link">
+                                <a href="/cetak-data" class="menu-link">
                                     <div data-i18n="Cetak Data">Cetak Data</div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="dashboards-ecommerce.html" class="menu-link">
+                                <a href="/referensi" class="menu-link">
                                     <div data-i18n="Tambah Referensi">Tambah Referensi</div>
                                 </a>
                             </li>
