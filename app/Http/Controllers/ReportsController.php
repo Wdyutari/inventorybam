@@ -13,4 +13,12 @@ class ReportsController extends Controller
         ];
         return view('reports/headOffice', $data);
     }
+ 
+    public function Klinik() {
+        $data = [
+            'title' => 'Report - Klinik',
+            'menu' => 'Klinik',
+        ];
+        return view('reports/klinik', $data);
+    }
 }

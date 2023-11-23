@@ -48,14 +48,14 @@
         <li class="menu-header small text-uppercase">
             <span class="menu-header-text">Reports</span>
         </li>
-        <li class="menu-item">
-            <a href="app-email.html" class="menu-link">
+        <li class="menu-item {{ request()->is('reports/head-office') ? 'active' : '' }}">
+            <a href="/reports/head-office" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-mail"></i>
                 <div data-i18n="Head Office">Head Office</div>
             </a>
         </li>
-        <li class="menu-item">
-            <a href="app-chat.html" class="menu-link">
+        <li class="menu-item {{ request()->is('reports/klinik') ? 'active' : '' }}">
+            <a href="/reports/klinik" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-messages"></i>
                 <div data-i18n="Klinik">Klinik</div>
             </a>

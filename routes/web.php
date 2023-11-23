@@ -22,7 +22,8 @@ Route::get('/cetak-data', [HomeController::class, 'CetakData']);
 Route::get('/referensi', [HomeController::class, 'Referensi']);
 
 // Reports
-Route::get('/report/head-office', [ReportsController::class, 'HeadOffice']);
+Route::get('/reports/head-office', [ReportsController::class, 'HeadOffice']);
+Route::get('/reports/klinik', [ReportsController::class, 'Klinik']);
 
 // Master Data
 Route::get('/master/referensi', [HomeController::class, 'referensi']);

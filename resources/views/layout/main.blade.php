@@ -12,6 +12,7 @@
             <div class="layout-page">
                 @include('layout.partials.navbar')
                 @yield('content')
+                @include('layout.partials.footer')
             </div>
         </div>
 
