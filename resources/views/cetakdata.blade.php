@@ -3,20 +3,21 @@
     <div class="content-wrapper">
         <!-- Content -->
         <div class="container-xxl flex-grow-1 container-p-y">
+            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Dashboard /</span> {{ $menu }}</h4>
             <div class="card">
                 <div class="card-datatable table-responsive pt-0">
                   <table class="datatables-basic table">
                     <thead>
                       <tr>
-                        <th></th>
-                        <th></th>
+
                         <th>id</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Date</th>
-                        <th>Salary</th>
-                        <th>Status</th>
-                        <th>Action</th>
+                        <th>Nama Aset</th>
+                        <th>Brand/Merk</th>
+                        <th>Lokasi</th>
+                        <th>PIC Penanggung Jawab</th>
+                        <th>Kondisi Aset</th>
+                        <th>Gambar Aset</th>
+                        <th>Fungsi</th>
                       </tr>
                     </thead>
                   </table>

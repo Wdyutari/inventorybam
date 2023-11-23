@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ReportsController;
+use App\Http\Controllers\MasterController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -26,7 +27,7 @@ Route::get('/reports/head-office', [ReportsController::class, 'HeadOffice']);
 Route::get('/reports/klinik', [ReportsController::class, 'Klinik']);
 
 // Master Data
-Route::get('/master/referensi', [HomeController::class, 'referensi']);
+Route::get('/master-data/unit-kerja', [MasterController::class, 'unitKerja']);
 
 
 

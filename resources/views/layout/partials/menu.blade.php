@@ -87,24 +87,24 @@
         <li class="menu-header small text-uppercase">
             <span class="menu-header-text">Master Data</span>
         </li>
-        <li class="menu-item">
-            <a href="app-email.html" class="menu-link">
+        <li class="menu-item {{ request()->is('master-data/unit-kerja') ? 'active' : '' }}">
+            <a href="/master-data/unit-kerja" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-mail"></i>
-                <div data-i18n="Head Office">Head Office</div>
+                <div data-i18n="Unit Kerja">Unit Kerja</div>
             </a>
         </li>
         <li class="menu-item">
             <a href="app-chat.html" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-messages"></i>
-                <div data-i18n="Klinik">Klinik</div>
+                <div data-i18n="Unit Bisnis">Unit Bisnis</div>
             </a>
         </li>
         <li class="menu-item">
-            <a href="javascript:void(0);" class="menu-link menu-toggle">
+            <a href="javascript:void(0);" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-file-dollar"></i>
-                <div data-i18n="Rumah Sakit">Rumah Sakit</div>
+                <div data-i18n="Jenis Inventori">Jenis Inventori</div>
             </a>
-            <ul class="menu-sub">
+            {{-- <ul class="menu-sub">
                 <li class="menu-item">
                     <a href="app-invoice-list.html" class="menu-link">
                         <div data-i18n="Layanan Medis">Layanan Medis</div>
@@ -120,7 +120,7 @@
                         <div data-i18n="SDM Umum">SDM Umum</div>
                     </a>
                 </li>
-            </ul>
+            </ul> --}}
         </li>
 </aside>
 <!-- / Menu -->

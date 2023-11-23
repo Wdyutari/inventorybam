@@ -4,7 +4,7 @@
         <!-- Content -->
 
         <div class="container-xxl flex-grow-1 container-p-y">
-            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Dashboard /</span> {{ $menu }}</h4>
+            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Master /</span> {{ $menu }}</h4>
             <div class="row">
                 <!-- Basic Layout -->
                 <div class="col-xxl">
@@ -17,7 +17,7 @@
 
                             <form>
                                 <div class="row">
-                                    <div class="col">
+
                                         <div class="row mb-3">
                                             <label class="col-sm-3 col-form-label" for="basic-default-name">Nama
                                                 Aset</label>
@@ -89,90 +89,8 @@
                                                 </select>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="row mb-3">
-                                            <label class="col-sm-3 col-form-label"
-                                                for="basic-default-company">Lokasi</label>
-                                            <div class="col-sm-9">
-                                                <select id="lokasi" class="select2 form-select"
-                                                    data-allow-clear="true">
-                                                    <option value="">Lokasi</option>
-                                                    <option value="2015">2015</option>
-                                                    <option value="2016">2016</option>
-                                                    <option value="2017">2017</option>
-                                                    <option value="2018">2018</option>
-                                                    <option value="2019">2019</option>
-                                                    <option value="2020">2020</option>
-                                                    <option value="2021">2021</option>
-                                                    <option value="2022">2022</option>
-                                                    <option value="2023">2023</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-3 col-form-label" for="no-inventaris">No Inventaris
-                                                Kode Pers</label>
-                                            <div class="col-sm-9">
-                                                <div class="input-group input-group-merge">
-                                                    <input type="text" id="no-inventaris" class="form-control"
-                                                        placeholder="No Inventaris Kode Pers" aria-label=""
-                                                    />
 
-                                                </div>
 
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-3 col-form-label" for="basic-default-phone">PIC
-                                            </label>
-                                            <div class="col-sm-9">
-                                                <select id="tahun-perolehan" class="select2 form-select"
-                                                    data-allow-clear="true">
-                                                    <option value="">Penanggung Jawab</option>
-                                                    <option value="alkes">Alkes</option>
-                                                    <option value="pk">PK</option>
-                                                    <option value="prt">PRT</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-3 col-form-label" for="basic-default-message">Jenis
-                                                Inventoris</label>
-                                            <div class="col-sm-9">
-                                                <select id="tahun-perolehan" class="select2 form-select"
-                                                    data-allow-clear="true">
-                                                    <option value="">Jenis Inventori</option>
-                                                    <option value="alkes">Alkes</option>
-                                                    <option value="pk">PK</option>
-                                                    <option value="prt">PRT</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-3 col-form-label" for="basic-default-message">Kondisi Aset</label>
-                                            <div class="col-sm-9">
-                                                <select id="kondisi-aset" class="select2 form-select"
-                                                    data-allow-clear="true">
-                                                    <option value="">Kondisi Aset</option>
-                                                    <option value="baik">Baik</option>
-                                                    <option value="rusak">Rusak</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-3 col-form-label" for="basic-default-message">Upload Aset</label>
-                                            <div class="col-sm-9">
-                                                <input class="form-control" type="file" id="formFile" />
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-3 col-form-label" for="basic-default-message">Keterangan</label>
-                                            <div class="col-sm-9">
-                                                <textarea type="text" class="form-control" placeholder="Keterangan Aset"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
 
                                 <div class="row justify-content-end">
