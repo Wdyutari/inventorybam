@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ReportsController;
 use Illuminate\Support\Facades\Route;
+
 
 
 /*
@@ -15,8 +17,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'inputData']);
-Route::get('/cetak-data', [HomeController::class, 'cetakData']);
-Route::get('/referensi', [HomeController::class, 'referensi']);
+Route::get('/', [HomeController::class, 'InputData']);
+Route::get('/cetak-data', [HomeController::class, 'CetakData']);
+Route::get('/referensi', [HomeController::class, 'Referensi']);
+
+// Reports
+Route::get('/report/head-office', [ReportsController::class, 'HeadOffice']);
+
+// Master Data
+Route::get('/master/referensi', [HomeController::class, 'referensi']);
+
+
 
 
