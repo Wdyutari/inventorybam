@@ -10,7 +10,7 @@ class HomeController extends Controller
     public function InputData() {
         $data = [
             'title' => 'Input Data',
-            'menu' => 'Input Data',
+            'menu' => '',
         ];
         return view('inputdata', $data);
     }
@@ -19,6 +19,4 @@ class HomeController extends Controller
         $data = User::get();
         return view('index', compact('data'));
     }
-
-
 }

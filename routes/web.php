@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\Dashboard;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ReportsController;
 use App\Http\Controllers\MasterController;
@@ -16,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/', [LoginController::class, 'index'])->name('default');
 
 // Aut
 Route::get('/login', [LoginController::class, 'index'])->name('login');
@@ -29,7 +32,7 @@ Route::get('/reports/klinik', [ReportsController::class, 'Klinik']);
 // Master Data
 Route::group(['prefix' => 'admin', 'middleware' => ['auth'], 'as' => 'admin.'], function(){
     Route::get('/master-data/m-inventori', [MasterController::class, 'mInventori'])->name('minventori');
-    Route::get('/', [HomeController::class, 'InputData'])->name('dashboard');
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/input-data', [HomeController::class, 'InputData'])->name('input-data');
 
     // Reports
