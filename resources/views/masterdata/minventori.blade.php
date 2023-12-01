@@ -163,11 +163,6 @@
                                                     <option value="2015">2015</option>
                                                     <option value="2016">2016</option>
                                                     <option value="2017">2017</option>
-                                                    <option value="2018">2018</option>
-                                                    <option value="2019">2019</option>
-                                                    <option value="2020">2020</option>
-                                                    <option value="2021">2021</option>
-                                                    <option value="2022">2022</option>
                                                     <option value="2023">2023</option>
                                                 </select>
 
@@ -296,16 +291,87 @@
                           data-bs-parent="#accordionExample"
                         >
                           <div class="accordion-body">
+                            <div class="mt-3">
+                                <!-- Button trigger modal -->
+                                <button
+                                  type="button"
+                                  class="btn btn-primary"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#penanggungJawab"
+                                >
+                                  Tambah Penanggung Jawab
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="penanggungJawab" tabindex="-1" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="modalCenterTitle">Tambah Penanggung Jawab</h5>
+                                        <button
+                                          type="button"
+                                          class="btn-close"
+                                          data-bs-dismiss="modal"
+                                          aria-label="Close"
+                                        ></button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <div class="row">
+                                          <div class="col mb-3">
+                                            <label for="nameWithTitle" class="form-label">Nama Penanggung Jawab</label>
+                                            <input
+                                              type="text"
+                                              id="nameWithTitle"
+                                              class="form-control"
+                                              placeholder="Masukkan Nama Penanggung Jawab"
+                                            />
+                                          </div>
+                                        </div>
+                                        <div class="col mb-3">
+                                            <label for="nameWithTitle" class="form-label">Unit Bisnis</label>
+
+                                                <select id="unit-bisnis" class="select2 form-select"
+                                                    data-allow-clear="true">
+                                                    <option value="">Pilih Unit Bisnis</option>
+                                                    <option value="2015">2015</option>
+                                                    <option value="2016">2016</option>
+                                                    <option value="2017">2017</option>
+                                                    <option value="2023">2023</option>
+                                                </select>
+
+                                        </div>
+                                        <div class="col mb-3">
+                                            <label for="nameWithTitle" class="form-label">Unit Kerja</label>
+
+                                                <select id="u-kerja" class="select2 form-select"
+                                                    data-allow-clear="true">
+                                                    <option value="">Pilih Unit Kerja</option>
+                                                    <option value="2015">2015</option>
+                                                    <option value="2016">2016</option>
+                                                    <option value="2017">2017</option>
+                                                    <option value="2023">2023</option>
+                                                </select>
+
+                                        </div>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-label-secondary" data-bs-dismiss="modal">
+                                         Tutup
+                                        </button>
+                                        <button type="button" class="btn btn-primary">Simpan</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             <table class="datatables-basic table table-bordered">
                                 <thead>
                                   <tr>
                                     <th>id</th>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Date</th>
-                                    <th>Salary</th>
-                                    <th>Status</th>
-                                    <th>Action</th>
+                                    <th>Nama Penanggung Jawab</th>
+                                    <th>Unit Bisnis</th>
+                                    <th>Unit Kerja</th>
+                                    <th>Fungsi</th>
                                   </tr>
                                 </thead>
                               </table>
