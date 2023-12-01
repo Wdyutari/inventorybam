@@ -70,5 +70,32 @@
                 <div data-i18n="Master Inventori">Master Inventori</div>
             </a>
         </li>
+
+        {{-- User --}}
+        <li class="menu-header small text-uppercase">
+            <span class="menu-header-text">User</span>
+        </li>
+
+        <li class="menu-item {{ request()->is('admin/user/profile') ? 'active' : '' }}">
+            <a href="{{ route('admin.profile') }}" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-user-circle"></i>
+                <div data-i18n="Profil">Profil</div>
+            </a>
+        </li>
+
+        {{-- INI ADA JIKA DIA ADALAH SUPER ADMIN --}}
+        <li class="menu-item {{ request()->is('admin/user/role') ? 'active' : '' }}">
+            <a href="{{ route('admin.mrole') }}" class="menu-link">
+                <i class="menu-icon fa-solid fa-fingerprint fa-xs"></i>
+                <div data-i18n="Manajemen Role">Manajemen Role</div>
+            </a>
+        </li>
+
+        <li class="menu-item">
+            <a href="{{ route('logout-proses') }}" class="menu-link menu-logout">
+                <i class="menu-icon fa-solid fa-right-from-bracket fa-xs"></i>
+                <div data-i18n="Logout">Logout</div>
+            </a>
+        </li>
 </aside>
 <!-- / Menu -->

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\Dashboard;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ReportsController;
@@ -40,8 +41,11 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth'], 'as' => 'admin.'], 
     Route::get('/reports/klinik', [ReportsController::class, 'Klinik'])->name('reports-klinik');
     Route::get('/reports/rs', [ReportsController::class, 'Rs'])->name('rs');
 
-
     // Master Data
     Route::get('/master-data/unit-kerja', [MasterController::class, 'unitKerja']);
+
+    // User
+    Route::get('/user/profile', [UserController::class, 'profile'])->name('profile');
+    Route::get('/user/role', [UserController::class, 'mRole'])->name('mrole');
 });
 

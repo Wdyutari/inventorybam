@@ -4,7 +4,7 @@
         <!-- Content -->
 
         <div class="container-xxl flex-grow-1 container-p-y">
-            <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Input Data /</span> {{ $menu }}</h4>
+            <h4 class="fw-bold py-3 mb-2"><span class="text-muted fw-light">Input Data /</span> {{ $menu }}</h4>
             <div class="row">
                 <!-- Basic Layout -->
                 <div class="col-xxl">
