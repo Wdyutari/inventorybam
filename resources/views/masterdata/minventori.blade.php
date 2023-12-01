@@ -118,6 +118,54 @@
                         data-bs-parent="#accordionExample"
                       >
                         <div class="accordion-body">
+                            <div class="mt-3">
+                                <!-- Button trigger modal -->
+                                <button
+                                  type="button"
+                                  class="btn btn-primary"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#unitBisnis"
+                                >
+                                  Tambah Unit Bisnis
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="unitBisnis" tabindex="-1" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="modalCenterTitle">Tambah Unit Bisnis</h5>
+                                        <button
+                                          type="button"
+                                          class="btn-close"
+                                          data-bs-dismiss="modal"
+                                          aria-label="Close"
+                                        ></button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <div class="row">
+                                          <div class="col mb-3">
+                                            <label for="nameWithTitle" class="form-label">Nama Unit Bisnis</label>
+                                            <input
+                                              type="text"
+                                              id="nameWithTitle"
+                                              class="form-control"
+                                              placeholder="Enter Name"
+                                            />
+                                          </div>
+                                        </div>
+
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-label-secondary" data-bs-dismiss="modal">
+                                         Tutup
+                                        </button>
+                                        <button type="button" class="btn btn-primary">Simpan</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             <table class="datatables-basic table table-bordered">
                                 <thead>
                                   <tr>
@@ -158,12 +206,8 @@
                                 <thead>
                                   <tr>
                                     <th>id</th>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Date</th>
-                                    <th>Salary</th>
-                                    <th>Status</th>
-                                    <th>Action</th>
+                                    <th>Jenis Inventori</th>
+                                    <th>Fungsi</th>
                                   </tr>
                                 </thead>
                               </table>
