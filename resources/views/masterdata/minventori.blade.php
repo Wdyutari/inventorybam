@@ -34,6 +34,7 @@
 
                         <div class="mt-3">
                           <!-- Button trigger modal -->
+                          <a href="{{ route('admin.input-data') }}"
                           <button
                             type="button"
                             class="btn btn-primary mb-2"
@@ -42,6 +43,7 @@
                           >
                             Tambah Unit Bisnis
                           </button>
+                          </a>
 
                           <!-- Modal -->
                           <div class="modal fade" id="unitBisnis" tabindex="-1" aria-hidden="true">

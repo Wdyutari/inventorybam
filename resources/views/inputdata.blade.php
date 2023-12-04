@@ -29,7 +29,11 @@
                                         <thead>
                                             <tr>
                                                 <th>id</th>
-                                                <th>Nama Unit Bisnis</th>
+                                                <th>Nama Aset</th>
+                                                <th>Brand/Merk</th>
+                                                <th>Lokasi</th>
+                                                <th>Penanggung Jawab</th>
+                                                <th>Kondisi Aset</th>
                                                 <th>Fungsi</th>
                                             </tr>
                                         </thead>
@@ -37,7 +41,7 @@
 
                                     <!-- Modal -->
                                     <div class="modal fade" id="asetBam" tabindex="-1" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-dialog modal-xl modal-simple">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
                                                             <h5 class="modal-title" id="modalCenterTitle">Tambah Asset</h5>
@@ -209,14 +213,7 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-
-
-                                                                    <div class="row justify-content-end">
-                                                                        <div class="col-sm-10">
-                                                                            <button type="submit" class="btn btn-primary">Simpan</button>
-                                                                        </div>
-                                                                    </div>
-                                                                </form>
+                                                                 </form>
                                                     </div>
                                                     <div class="modal-footer">
                                                             <button type="button" class="btn btn-label-secondary" data-bs-dismiss="modal">
