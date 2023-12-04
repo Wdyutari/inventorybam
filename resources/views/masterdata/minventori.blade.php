@@ -34,7 +34,7 @@
 
                         <div class="mt-3">
                           <!-- Button trigger modal -->
-                          <a href="{{ route('admin.input-data') }}"
+                          <a href="{{ route('admin.unitbisnis') }}">
                           <button
                             type="button"
                             class="btn btn-primary mb-2"
@@ -59,17 +59,19 @@
                                   ></button>
                                 </div>
                                 <div class="modal-body">
-                                  <div class="form">
-                                    <div class="form-group">
-                                              <label for="nameWithTitle" class="form-label">Nama Unit Bisnis</label>
-                                              <input
-                                                type="text"
-                                                id="nameWithTitle"
-                                                class="form-control"
-                                                placeholder="Masukkan Nama Unit Bisnis"
-                                              />
-                                    </div>
+                                    <form action="{{ route('admin.unitbisnis') }}" method="POST">
+                                        @csrf
+                                        <div class="form-group">
+                                            <label for="nameWithTitle" class="form-label">Nama Unit Bisnis</label>
+                                            <input
+                                              type="text"
+                                              id="nameWithTitle"
+                                              class="form-control"
+                                              placeholder="Masukkan Nama Unit Bisnis"
+                                            />
                                   </div>
+                                    </form>
+
 
                                 </div>
                                 <div class="modal-footer">

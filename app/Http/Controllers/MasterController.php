@@ -14,4 +14,12 @@ class MasterController extends Controller
         ];
         return view('masterdata/minventori', $data);
     }
+
+    public function unitbisnis(){
+        $data = [
+            'title' => 'Master Data',
+            'menu' => 'Master Inventori',
+        ];
+        return view('masterdata/unitbisnis', $data);
+    }
 }

@@ -43,6 +43,8 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth'], 'as' => 'admin.'], 
 
     // Master Data
     Route::get('/master-data/unit-kerja', [MasterController::class, 'unitKerja']);
+    Route::get('/master-data/unit-bisnis', [MasterController::class, 'unitBisnis']);
+    Route::post('/master-data/unit-bisnis', [MasterController::class, 'unitBisnis'])->name('unitbisnis');
 
     // User
     Route::get('/user/profile', [UserController::class, 'profile'])->name('profile');
