@@ -36,15 +36,15 @@
                           <!-- Button trigger modal -->
                           <button
                             type="button"
-                            class="btn btn-primary"
+                            class="btn btn-primary mb-2"
                             data-bs-toggle="modal"
-                            data-bs-target="#modalCenter"
+                            data-bs-target="#unitBisnis"
                           >
                             Tambah Unit Bisnis
                           </button>
 
                           <!-- Modal -->
-                          <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
+                          <div class="modal fade" id="unitBisnis" tabindex="-1" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
                               <div class="modal-content">
                                 <div class="modal-header">
@@ -57,15 +57,15 @@
                                   ></button>
                                 </div>
                                 <div class="modal-body">
-                                  <div class="row">
-                                    <div class="col mb-3">
-                                      <label for="nameWithTitle" class="form-label">Nama Unit Bisnis</label>
-                                      <input
-                                        type="text"
-                                        id="nameWithTitle"
-                                        class="form-control"
-                                        placeholder="Enter Name"
-                                      />
+                                  <div class="form">
+                                    <div class="form-group">
+                                              <label for="nameWithTitle" class="form-label">Nama Unit Bisnis</label>
+                                              <input
+                                                type="text"
+                                                id="nameWithTitle"
+                                                class="form-control"
+                                                placeholder="Masukkan Nama Unit Bisnis"
+                                              />
                                     </div>
                                   </div>
 
@@ -86,12 +86,8 @@
                                 <thead>
                                   <tr>
                                     <th>id</th>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Date</th>
-                                    <th>Salary</th>
-                                    <th>Status</th>
-                                    <th>Action</th>
+                                    <th>Nama Unit Bisnis</th>
+                                    <th>Fungsi</th>
                                   </tr>
                                 </thead>
                               </table>
@@ -122,7 +118,7 @@
                                 <!-- Button trigger modal -->
                                 <button
                                   type="button"
-                                  class="btn btn-primary"
+                                  class="btn btn-primary mb-2"
                                   data-bs-toggle="modal"
                                   data-bs-target="#unitBisnis"
                                 >
@@ -215,7 +211,7 @@
                                 <!-- Button trigger modal -->
                                 <button
                                   type="button"
-                                  class="btn btn-primary"
+                                  class="btn btn-primary mb-2"
                                   data-bs-toggle="modal"
                                   data-bs-target="#jenisInventory"
                                 >
@@ -295,7 +291,7 @@
                                 <!-- Button trigger modal -->
                                 <button
                                   type="button"
-                                  class="btn btn-primary"
+                                  class="btn btn-primary mb-2"
                                   data-bs-toggle="modal"
                                   data-bs-target="#penanggungJawab"
                                 >
