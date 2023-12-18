@@ -14,11 +14,17 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
+        // User::updateOrCreate([
+        //     'nopeg' => 9823120373,
+        //     'name' => 'Taufik Agung Santoso',
+        //     'email' => 'taufikWe@gmail.com',
+        //     'password' => Hash::make('taufik'),
+        // ]);
         User::updateOrCreate([
-            'nopeg' => 9823120373,
-            'name' => 'Taufik Agung Santoso',
-            'email' => 'taufikWe@gmail.com',
-            'password' => Hash::make('taufik'),
+            'nopeg' => 9721210209,
+            'name' => 'WIDYA RESTU UTARI',
+            'email' => 'widyautari@gmail.com',
+            'password' => Hash::make('widyautari'),
         ]);
     }
 }

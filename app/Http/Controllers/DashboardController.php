@@ -13,6 +13,7 @@ class DashboardController extends Controller
         $data = [
             'title' => 'Dashboard',
         ];
+        dd(auth()->user()->getRoleNames());
         return view('index', $data);
     }
 }
