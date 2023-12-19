@@ -20,11 +20,18 @@ class UserSeeder extends Seeder
         //     'email' => 'taufikWe@gmail.com',
         //     'password' => Hash::make('taufik'),
         // ]);
+        // User::updateOrCreate([
+        //     'nopeg' => 9721210209,
+        //     'name' => 'WIDYA RESTU UTARI',
+        //     'email' => 'widyautari@gmail.com',
+        //     'password' => Hash::make('widyautari'),
+        // ]);
+       
         User::updateOrCreate([
-            'nopeg' => 9721210209,
-            'name' => 'WIDYA RESTU UTARI',
-            'email' => 'widyautari@gmail.com',
-            'password' => Hash::make('widyautari'),
+            'nopeg' => 9621210242,
+            'name' => 'MEIDARSI UTAMI',
+            'email' => 'meidarsi@gmail.com',
+            'password' => Hash::make('meidarsi'),
         ]);
     }
 }

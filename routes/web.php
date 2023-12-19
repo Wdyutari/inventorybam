@@ -32,8 +32,8 @@ Route::get('/reports/klinik', [ReportsController::class, 'Klinik']);
 
 // Master Data
 Route::group(['prefix' => 'admin', 'middleware' => ['auth'], 'as' => 'admin.'], function(){
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard')->middleware('can:view_dashboard');
     Route::get('/master-data/m-inventori', [MasterController::class, 'mInventori'])->name('minventori');
-    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/input-data', [HomeController::class, 'InputData'])->name('input-data');
 
     // Reports
